@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:id="@+id/linearback">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/imageVieww1"
+                android:src="@drawable/backgroundimg"
+                android:layout_weight="0.80"
+                android:scaleType="fitXY"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearback"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/loginasuser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:src="@drawable/userlogin" />
+
+            <ImageButton
+                android:id="@+id/loginasadmin"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.10"
+                android:text="login as admin"
+                android:src="@drawable/adminlogin1" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
